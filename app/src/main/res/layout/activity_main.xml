@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBE9E7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sunset" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Welcome to you dont know series"
+                android:textSize="24dp"
+                android:lineSpacingExtra="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Enter your name below, to start the quiz" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your name here"
+                android:id="@+id/edit_text_view"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #1" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Which is the second largest english speaking population in the world?" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="U.S.A." />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="United Kingdom" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #2" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Which of the following people have indian origins?" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        style="@style/CheckboxStyle"
+                        android:text="Ben Kingsley" />
+
+                    <CheckBox
+                        style="@style/CheckboxStyle"
+                        android:text="Freddie Mercury" />
+
+                    <CheckBox
+                        style="@style/CheckboxStyle"
+                        android:text="Donald Trump" />
+                </LinearLayout>
+
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #3" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Which country the dolphins are treated as non-human persons?" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Japan" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Hawaii" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #4" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Which is the largest movie producer country in the world?" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="U.S.A." />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="France" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #5" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Which of the following games have been invented in India?" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Cricket" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Snakes and Ladders Game" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Pool" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #6" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Buttons were invented by" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Microsoft" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Macintosh" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="indians" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #7" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Water on moon was discovered by:" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Russia" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="U.S.A" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #8" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="The largest number of vegetarians in the world are in:" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="China" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Brazil" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #9" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="Which is the world's second pharmaceutical industry by the volume of the pills produced?" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="U.S.A" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="China" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="question #10" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="In which country the cotton was first spun" />
+
+                <RadioGroup
+                    style="@style/RadioGroupStyle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="China" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="Persian Empire" />
+
+                    <RadioButton
+                        style="@style/RadioButtonStyle"
+                        android:text="India" />
+                </RadioGroup>
+
+                <View
+                    style="@style/DividerStyle" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            style="@style/BottomButtons"
+            android:text="Hit me"/>
+
+        <Button
+           style="@style/BottomButtons"
+            android:text="Reset Quiz"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="My portfolio: https://mecozma.github.io/"
+            android:autoLink="web"
+            android:gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</ScrollView>
