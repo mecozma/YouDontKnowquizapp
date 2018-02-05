@@ -56,6 +56,7 @@
                     android:text="Which is the second largest english speaking population in the world?" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group00"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
@@ -65,6 +66,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india1"
                         android:text="India" />
 
                     <RadioButton
@@ -96,14 +98,17 @@
 
                     <CheckBox
                         style="@style/CheckboxStyle"
+                        android:id="@+id/india2"
                         android:text="Ben Kingsley" />
 
                     <CheckBox
                         style="@style/CheckboxStyle"
+                        android:id="@+id/india3"
                         android:text="Freddie Mercury" />
 
                     <CheckBox
                         style="@style/CheckboxStyle"
+                        android:id="@+id/indiaNull"
                         android:text="Donald Trump" />
                 </LinearLayout>
 
@@ -126,11 +131,13 @@
                     android:text="Which country the dolphins are treated as non-human persons?" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group01"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india4"
                         android:text="India" />
 
                     <RadioButton
@@ -160,6 +167,7 @@
                     android:text="Which is the largest movie producer country in the world?" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group02"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
@@ -173,6 +181,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india5"
                         android:text="India" />
                 </RadioGroup>
 
@@ -194,6 +203,7 @@
                     android:text="Which of the following games have been invented in India?" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group03"
                     style="@style/RadioGroupStyle"
                     android:orientation="vertical">
 
@@ -203,6 +213,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india6"
                         android:text="Snakes and Ladders Game" />
 
                     <RadioButton
@@ -228,6 +239,7 @@
                     android:text="Buttons were invented by" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group04"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
@@ -241,6 +253,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india7"
                         android:text="indians" />
                 </RadioGroup>
 
@@ -262,11 +275,13 @@
                     android:text="Water on moon was discovered by:" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group05"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india8"
                         android:text="India" />
 
                     <RadioButton
@@ -296,6 +311,7 @@
                     android:text="The largest number of vegetarians in the world are in:" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group06"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
@@ -309,6 +325,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india9"
                         android:text="India" />
                 </RadioGroup>
 
@@ -330,11 +347,13 @@
                     android:text="Which is the world's second pharmaceutical industry by the volume of the pills produced?" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group07"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india10"
                         android:text="India" />
 
                     <RadioButton
@@ -364,6 +383,7 @@
                     android:text="In which country the cotton was first spun" />
 
                 <RadioGroup
+                    android:id="@+id/radio_group08"
                     style="@style/RadioGroupStyle"
                     android:orientation="horizontal">
 
@@ -377,6 +397,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
+                        android:id="@+id/india11"
                         android:text="India" />
                 </RadioGroup>
 
@@ -384,15 +405,23 @@
                     style="@style/DividerStyle" />
             </LinearLayout>
 
+            <TextView
+                android:id="@+id/summary_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
 
         </LinearLayout>
 
         <Button
             style="@style/BottomButtons"
+            android:id="@+id/submit_quiz"
+            android:onClick="showScore"
             android:text="Hit me"/>
 
         <Button
            style="@style/BottomButtons"
+            android:onClick="resetQuiz"
             android:text="Reset Quiz"/>
         <TextView
             android:layout_width="match_parent"
