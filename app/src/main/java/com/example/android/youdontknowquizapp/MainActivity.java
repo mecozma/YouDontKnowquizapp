@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //    When the Hit me button is clicked this function is fired
+    //    This method counts the answers
     private int submitQuiz() {
 //        Answer for first question
         RadioButton india1 = (RadioButton) findViewById(R.id.india1);
@@ -142,28 +142,39 @@ public class MainActivity extends AppCompatActivity {
         return finalScore;
     }
 
+//    Thsi method is fired when the "Hit me" button is clicked
     public void showScore(View view) {
         finalScore = submitQuiz();
         display(finalScore);
     }
 
+//      This method displays the score message
     private void display(int score) {
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
         userName = nameField.getText().toString();
 
+        if(userName.length() == 0) {
+            Toast.makeText(this, "Please insert your name", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         if (finalScore == 10) {
             TextView scoreTextView = (TextView) findViewById(R.id.summary_message);
-            scoreTextView.setText("WooHoo " + userName +  "\n You know more things about India than you knew before this quiz" + "\nScore: " + finalScore + "/10");
+            scoreTextView.setText("WooHoo " + userName +
+                    "\nYou know more things about India than you knew before this quiz" +
+                    "\nScore: " + finalScore + "/10");
             Toast.makeText(this, "Thank you for completing the quiz", Toast.LENGTH_SHORT).show();
         } else {
             TextView scoreTextView2 = (TextView) findViewById(R.id.summary_message);
-            scoreTextView2.setText("Look for the green highlights " + userName + "\nYou can solve this");
+            scoreTextView2.setText("Look for the green highlights " + userName +
+                    "\nYou can solve this");
+            Toast.makeText(this, "Please check all the right answers to see the score", Toast.LENGTH_SHORT).show();
         }
 
     }
 
 
-    public void resetQuiz (View v) {
+    public void resetQuiz(View v) {
 
 //        Reset button color
         RadioButton india1 = (RadioButton) findViewById(R.id.india1);
@@ -198,7 +209,6 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup00 = (RadioGroup) findViewById(R.id.radio_group00);
         radioGroup00.clearCheck();
 
-
         RadioGroup radioGroup01 = (RadioGroup) findViewById(R.id.radio_group01);
         radioGroup01.clearCheck();
 
@@ -223,12 +233,10 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup08 = (RadioGroup) findViewById(R.id.radio_group08);
         radioGroup08.clearCheck();
 
-
-
+//          Reset the checkboxes
         CheckBox checkBox = (CheckBox) findViewById(R.id.india2);
         checkBox.setChecked(false);
         checkBox.setTextColor(getResources().getColor(R.color.green));
-
 
         CheckBox checkBox1 = (CheckBox) findViewById(R.id.india3);
         checkBox1.setChecked(false);
@@ -237,10 +245,13 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBox2 = (CheckBox) findViewById(R.id.indiaNull);
         checkBox2.setChecked(false);
 
-
-
+//          Reset summary message
         TextView textView = (TextView) findViewById(R.id.summary_message);
         textView.setText("Score");
+
+//        Reset EditText value
+        EditText nameField = (EditText) findViewById(R.id.edit_text_view);
+        nameField.setText(null);
 
 
     }

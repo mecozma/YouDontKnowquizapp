@@ -1,5 +1,78 @@
 <resources>
     <string name="app_name">You Dont Know quizapp</string>
+    <string name="welcomeTextView">Welcome to you dont know series</string>
+    <string name="enter_your_name_below_to_start_the_quiz">Enter your name below, to start the quiz</string>
+    <string name="your_name_here">Your name here</string>
 
+    <!--Question #1 and answers-->
+    <string name="question_1">question #1</string>
+    <string name="questionOne">Which is the second largest english speaking population in the world?</string>
+    <string name="queationOne1">U.S.A.</string>
+    <string name="questionOne2">India</string>
+    <string name="questionOne3">United Kingdom</string>
 
+    <!--Question #2 and answers-->
+    <string name="question_2">question #2</string>
+    <string name="questionTwo">Which of the following people have indian origins?</string>
+    <string name="questionTwo1">Ben Kingsley</string>
+    <string name="questionTwo2">Freddie Mercury</string>
+    <string name="questionTwo3">Donald Trump</string>
+
+    <!--Question #3 and answers-->
+    <string name="question_3">question #3</string>
+    <string name="questionThree">Which country the dolphins are treated as non-human persons?</string>
+    <string name="questionThree1">India</string>
+    <string name="questionThree2">Japan</string>
+    <string name="questionThree3">Hawaii</string>
+
+    <!--Question #4 and answers-->
+    <string name="question_4">question #4</string>
+    <string name="questionFour">Which is the largest movie producer country in the world?</string>
+    <string name="questionFour1">U.S.A.</string>
+    <string name="questionFour2">France</string>
+    <string name="questionFour3">India</string>
+
+    <!--Question #5 and answers-->
+    <string name="question_5">question #5</string>
+    <string name="questionFive">Which of the following games have been invented in India?</string>
+    <string name="questionFive1">Cricket</string>
+    <string name="questionFive2">Snakes and Ladders Game</string>
+    <string name="questionFive3">Pool</string>
+
+    <!--Question #6 and answers-->
+    <string name="question_6">question #6</string>
+    <string name="questionSix">Buttons were invented by</string>
+    <string name="questionSix1">Microsoft</string>
+    <string name="questionSix2">Macintosh</string>
+    <string name="questionSix3">indians</string>
+
+    <!--Question #7 and answers-->
+    <string name="question_7">question #7</string>
+    <string name="questionSeven">Water on moon was discovered by:</string>
+    <string name="questionSeven1">India</string>
+    <string name="questionSeven2">Russia</string>
+    <string name="questionSeven3">U.S.A</string>
+
+    <!--Question #8 and answers-->
+    <string name="question_8">question #8</string>
+    <string name="questionEight">The largest number of vegetarians in the world are in:</string>
+    <string name="questionEight1">China</string>
+    <string name="questionEight2">Brazil</string>
+    <string name="questionEight3">India</string>
+
+    <!--Question #9 and answers-->
+    <string name="question_9">question #9</string>
+    <string name="questionNine">Which is the world\'s second pharmaceutical industry by the volume of the pills produced?</string>
+    <string name="questionNine1">India</string>
+    <string name="questionNine2">U.S.A</string>
+    <string name="questionNine3">China</string>
+
+    <!--Question#10 and answers-->
+    <string name="question_10">question #10</string>
+    <string name="questionTen">In which country the cotton was first spun</string>
+    <string name="questionTen1">China</string>
+    <string name="questionTen2">Persian Empire</string>
+    <string name="questionTen3">India</string>
+    <string name="hit_me">Hit me</string>
+    <string name="reset_quiz">Reset Quiz</string>
 </resources>

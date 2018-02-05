@@ -6,4 +6,5 @@
     <color name="textColor">#3E2723</color>
     <color name="green">#4DB6AC</color>
     <color name="black">#000000</color>
+    <color name="appBackground">#FBE9E7</color>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBE9E7">
+    android:background="@color/appBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,7 +12,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="@dimen/imageHeight"
             android:scaleType="centerCrop"
             android:src="@drawable/sunset" />
 
@@ -20,27 +20,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/layoutPadding">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome to you dont know series"
-                android:textSize="24dp"
-                android:lineSpacingExtra="4dp"/>
+                android:lineSpacingExtra="@dimen/lineSpacing"
+                android:text="@string/welcomeTextView"
+                android:textSize="@dimen/welcomeTextViewSize" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Enter your name below, to start the quiz" />
+                android:layout_marginTop="@dimen/nameTextMarginTop"
+                android:text="@string/enter_your_name_below_to_start_the_quiz" />
 
             <EditText
+                android:id="@+id/edit_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Your name here"
-                android:id="@+id/edit_text_view"/>
+                android:inputType="textCapWords"
+                android:hint="@string/your_name_here" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,11 +50,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #1" />
+                    android:text="@string/question_1" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Which is the second largest english speaking population in the world?" />
+                    android:text="@string/questionOne" />
 
                 <RadioGroup
                     android:id="@+id/radio_group00"
@@ -62,20 +63,19 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="U.S.A." />
+                        android:text="@string/queationOne1" />
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india1"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionOne2" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="United Kingdom" />
+                        android:text="@string/questionOne3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,11 +85,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #2" />
+                    android:text="@string/question_2" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Which of the following people have indian origins?" />
+                    android:text="@string/questionTwo" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -97,24 +97,23 @@
                     android:orientation="vertical">
 
                     <CheckBox
-                        style="@style/CheckboxStyle"
                         android:id="@+id/india2"
-                        android:text="Ben Kingsley" />
+                        style="@style/CheckboxStyle"
+                        android:text="@string/questionTwo1" />
 
                     <CheckBox
-                        style="@style/CheckboxStyle"
                         android:id="@+id/india3"
-                        android:text="Freddie Mercury" />
+                        style="@style/CheckboxStyle"
+                        android:text="@string/questionTwo2" />
 
                     <CheckBox
-                        style="@style/CheckboxStyle"
                         android:id="@+id/indiaNull"
-                        android:text="Donald Trump" />
+                        style="@style/CheckboxStyle"
+                        android:text="@string/questionTwo3" />
                 </LinearLayout>
 
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -124,11 +123,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #3" />
+                    android:text="@string/question_3" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Which country the dolphins are treated as non-human persons?" />
+                    android:text="@string/questionThree" />
 
                 <RadioGroup
                     android:id="@+id/radio_group01"
@@ -136,21 +135,20 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india4"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionThree1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Japan" />
+                        android:text="@string/questionThree2" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Hawaii" />
+                        android:text="@string/questionThree3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -160,11 +158,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #4" />
+                    android:text="@string/question_4" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Which is the largest movie producer country in the world?" />
+                    android:text="@string/questionFour" />
 
                 <RadioGroup
                     android:id="@+id/radio_group02"
@@ -173,20 +171,19 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="U.S.A." />
+                        android:text="@string/questionFour1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="France" />
+                        android:text="@string/questionFour2" />
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india5"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionFour3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -196,11 +193,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #5" />
+                    android:text="@string/question_5" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Which of the following games have been invented in India?" />
+                    android:text="@string/questionFive" />
 
                 <RadioGroup
                     android:id="@+id/radio_group03"
@@ -209,20 +206,19 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Cricket" />
+                        android:text="@string/questionFive1" />
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india6"
-                        android:text="Snakes and Ladders Game" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionFive2" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Pool" />
+                        android:text="@string/questionFive3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -232,11 +228,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #6" />
+                    android:text="@string/question_6" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Buttons were invented by" />
+                    android:text="@string/questionSix" />
 
                 <RadioGroup
                     android:id="@+id/radio_group04"
@@ -245,20 +241,19 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Microsoft" />
+                        android:text="@string/questionSix1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Macintosh" />
+                        android:text="@string/questionSix2" />
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india7"
-                        android:text="indians" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionSix3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -268,11 +263,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #7" />
+                    android:text="@string/question_7" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Water on moon was discovered by:" />
+                    android:text="@string/questionSeven" />
 
                 <RadioGroup
                     android:id="@+id/radio_group05"
@@ -280,21 +275,20 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india8"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionSeven1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Russia" />
+                        android:text="@string/questionSeven2" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="U.S.A" />
+                        android:text="@string/questionSeven3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -304,11 +298,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #8" />
+                    android:text="@string/question_8" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="The largest number of vegetarians in the world are in:" />
+                    android:text="@string/questionEight" />
 
                 <RadioGroup
                     android:id="@+id/radio_group06"
@@ -317,20 +311,19 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="China" />
+                        android:text="@string/questionEight1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Brazil" />
+                        android:text="@string/questionEight2" />
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india9"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionEight3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -340,11 +333,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #9" />
+                    android:text="@string/question_9" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="Which is the world's second pharmaceutical industry by the volume of the pills produced?" />
+                    android:text="@string/questionNine" />
 
                 <RadioGroup
                     android:id="@+id/radio_group07"
@@ -352,21 +345,20 @@
                     android:orientation="horizontal">
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india10"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionNine1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="U.S.A" />
+                        android:text="@string/questionNine2" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="China" />
+                        android:text="@string/questionNine3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <LinearLayout
@@ -376,11 +368,11 @@
 
                 <TextView
                     style="@style/QuestionNumberStyle"
-                    android:text="question #10" />
+                    android:text="@string/question_10" />
 
                 <TextView
                     style="@style/QuestionTextStyle"
-                    android:text="In which country the cotton was first spun" />
+                    android:text="@string/questionTen" />
 
                 <RadioGroup
                     android:id="@+id/radio_group08"
@@ -389,20 +381,19 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="China" />
+                        android:text="@string/questionTen1" />
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="Persian Empire" />
+                        android:text="@string/questionTen2" />
 
                     <RadioButton
-                        style="@style/RadioButtonStyle"
                         android:id="@+id/india11"
-                        android:text="India" />
+                        style="@style/RadioButtonStyle"
+                        android:text="@string/questionTen3" />
                 </RadioGroup>
 
-                <View
-                    style="@style/DividerStyle" />
+                <View style="@style/DividerStyle" />
             </LinearLayout>
 
             <TextView
@@ -414,22 +405,23 @@
         </LinearLayout>
 
         <Button
-            style="@style/BottomButtons"
             android:id="@+id/submit_quiz"
+            style="@style/BottomButtons"
             android:onClick="showScore"
-            android:text="Hit me"/>
+            android:text="@string/hit_me" />
 
         <Button
-           style="@style/BottomButtons"
+            style="@style/BottomButtons"
             android:onClick="resetQuiz"
-            android:text="Reset Quiz"/>
+            android:text="@string/reset_quiz" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="My portfolio: https://mecozma.github.io/"
             android:autoLink="web"
-            android:gravity="center"
             android:background="@color/colorPrimaryDark"
-            android:textColor="#fff"/>
+            android:gravity="center"
+            android:text="My portfolio: https://mecozma.github.io/"
+            android:textColor="#fff" />
     </LinearLayout>
 </ScrollView>
