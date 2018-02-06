@@ -1,4 +1,5 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">You Dont Know quizapp</string>
     <string name="welcomeTextView">Welcome to you dont know series</string>
     <string name="enter_your_name_below_to_start_the_quiz">Enter your name below, to start the quiz</string>
@@ -75,4 +76,17 @@
     <string name="questionTen3">India</string>
     <string name="hit_me">Hit me</string>
     <string name="reset_quiz">Reset Quiz</string>
+
+    <!--Score message strings-->
+    <string name="WooHoo">WooHoo <xliff:g example="Carla" id="userName">%s</xliff:g></string>
+    <string name="order_summary_name">Name: <xliff:g example="Carla" id="customerName">%s</xliff:g></string>
+    <string name="score">/nScore</string>
+    <string name="you">\nYou know more things about India than you knew before this quiz</string>
+    <string name="message_score">\nScore: <xliff:g example="score : 10/10" id="message_score">%s</xliff:g></string>
+    <string name="ten_of_ten">/10</string>
+    <string name="firstToast">Thank you for completing the quiz</string>
+    <string name="notCompletedMessage">Look for the green highlights <xliff:g example="score : 10/10" id="no_message">%s</xliff:g></string>
+    <string name="youcansolvethis">. You can solve this.</string>
+    <string name="your_score">\nYour score is: <xliff:g example="score : 10/10" id="no_message">%s</xliff:g></string>
+    <string name="my_portfolio_https_mecozma_github_io">My portfolio: https://mecozma.github.io/</string>
 </resources>

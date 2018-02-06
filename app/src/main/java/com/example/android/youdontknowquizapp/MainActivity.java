@@ -36,46 +36,35 @@ public class MainActivity extends AppCompatActivity {
 //        Answer for first question
         RadioButton india1 = (RadioButton) findViewById(R.id.india1);
         boolean isIndia1 = india1.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia1));
         //Answer for second question
         CheckBox india2 = (CheckBox) findViewById(R.id.india2);
         boolean isIndia2 = india2.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia2));
         CheckBox india3 = (CheckBox) findViewById(R.id.india3);
         boolean isIndia3 = india3.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia3));
 //        Answer for third question
         RadioButton india4 = (RadioButton) findViewById(R.id.india4);
         boolean isIndia4 = india4.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia4));
 //        Answer for forth question
         RadioButton india5 = (RadioButton) findViewById(R.id.india5);
         boolean isIndia5 = india5.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia5));
 //        Answer for fifth question
         RadioButton india6 = (RadioButton) findViewById(R.id.india6);
         boolean isIndia6 = india6.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia6));
 //        Answer for sixth question
         RadioButton india7 = (RadioButton) findViewById(R.id.india7);
         boolean isIndia7 = india7.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia3));
 //        Answer for seventh question
         RadioButton india8 = (RadioButton) findViewById(R.id.india8);
         boolean isIndia8 = india8.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia8));
 //        Answer for eighth question
         RadioButton india9 = (RadioButton) findViewById(R.id.india9);
         boolean isIndia9 = india9.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia9));
 //        Answer for nineth question
         RadioButton india10 = (RadioButton) findViewById(R.id.india10);
         boolean isIndia10 = india10.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia10));
 //        Answer for the last question of the quiz
         RadioButton india11 = (RadioButton) findViewById(R.id.india11);
         boolean isIndia11 = india11.isChecked();
-        Log.v("MainActivity", "IS true: " + Boolean.toString(isIndia11));
 
         int finalScore = 0;
 
@@ -142,34 +131,36 @@ public class MainActivity extends AppCompatActivity {
         return finalScore;
     }
 
-//    Thsi method is fired when the "Hit me" button is clicked
+    //    This method is fired when the "Hit me" button is clicked
     public void showScore(View view) {
         finalScore = submitQuiz();
         display(finalScore);
     }
 
-//      This method displays the score message
+    //      This method displays the score message
     private void display(int score) {
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
         userName = nameField.getText().toString();
 
-        if(userName.length() == 0) {
+        if (userName.length() == 0) {
             Toast.makeText(this, "Please insert your name", Toast.LENGTH_SHORT).show();
             return;
         }
 
         if (finalScore == 10) {
             TextView scoreTextView = (TextView) findViewById(R.id.summary_message);
-            scoreTextView.setText("WooHoo " + userName +
-                    "\nYou know more things about India than you knew before this quiz" +
-                    "\nScore: " + finalScore + "/10");
-            Toast.makeText(this, "Thank you for completing the quiz", Toast.LENGTH_SHORT).show();
+            scoreTextView.setText(getString(R.string.WooHoo, userName) +
+                    getString(R.string.you) +
+                    getString(R.string.message_score, finalScore) +
+                    getString(R.string.ten_of_ten));
+            Toast.makeText(this, getString(R.string.firstToast), Toast.LENGTH_SHORT).show();
         } else {
             TextView scoreTextView2 = (TextView) findViewById(R.id.summary_message);
-            scoreTextView2.setText("Look for the green highlights " + userName +
-                    "\nYou can solve this");
-            Toast.makeText(this, "Please check all the right answers to see the score", Toast.LENGTH_SHORT).show();
+            scoreTextView2.setText(getString(R.string.notCompletedMessage, userName) +
+                    getString(R.string.youcansolvethis) +
+                    getString(R.string.your_score, finalScore));
         }
+
 
     }
 
@@ -247,7 +238,7 @@ public class MainActivity extends AppCompatActivity {
 
 //          Reset summary message
         TextView textView = (TextView) findViewById(R.id.summary_message);
-        textView.setText("Score");
+        textView.setText(R.string.score);
 
 //        Reset EditText value
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
