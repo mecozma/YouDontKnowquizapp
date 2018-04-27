@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/appBackground">
@@ -112,8 +111,8 @@
                         android:text="@string/questionTwo3" />
                 </LinearLayout>
 
-
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -149,6 +148,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -184,6 +184,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -219,6 +220,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -254,6 +256,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -289,6 +292,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -324,6 +328,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -359,6 +364,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -394,6 +400,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -408,13 +415,16 @@
                 <TextView
                     style="@style/QuestionTextStyle"
                     android:text="@string/questionEleven" />
-                    <EditText
-                        android:id="@+id/capital"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Your answer here..."
-                        android:inputType="textCapWords"/>
+
+                <EditText
+                    android:id="@+id/capital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/your_answer_here"
+                    android:inputType="textCapWords" />
+
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <TextView
@@ -444,5 +454,7 @@
             android:gravity="center"
             android:text="@string/my_portfolio_https_mecozma_github_io"
             android:textColor="#fff" />
+
     </LinearLayout>
+
 </ScrollView>

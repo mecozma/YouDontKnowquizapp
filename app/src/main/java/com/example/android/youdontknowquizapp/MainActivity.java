@@ -1,20 +1,16 @@
 package com.example.android.youdontknowquizapp;
 
 
-import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.security.DigestOutputStream;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -22,15 +18,16 @@ public class MainActivity extends AppCompatActivity {
 
     String userName;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-
+    @Override
+    protected void onDestroy() {
+        // TODO Auto-generated method stub
+        super.onDestroy();
     }
 
     //    This method counts the answers
@@ -72,10 +69,8 @@ public class MainActivity extends AppCompatActivity {
 //        Answer for the eleventh question of the quiz
         EditText capital = (EditText) findViewById(R.id.capital);
         String getCapital = capital.getText().toString();
-        Log.v("Mainactivity", "Your Capital is: " + getCapital);
 
         int finalScore = 0;
-        String capitalAnswer = "New Delhi";
 
         if (isIndia1) {
             finalScore = finalScore + 1;
@@ -138,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
             india11.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if(getCapital == capitalAnswer) {
+        if (getCapital.equals("New Delhi")) {
             finalScore = finalScore + 1;
         } else {
             capital.setTextColor(getResources().getColor(R.color.green));
@@ -262,7 +257,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        Reset question eleven
         EditText capital = (EditText) findViewById(R.id.capital);
-       capital.setText(null);
+        capital.setText(null);
 
 
     }
