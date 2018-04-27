@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     String userName;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         boolean isIndia2 = india2.isChecked();
         CheckBox india3 = (CheckBox) findViewById(R.id.india3);
         boolean isIndia3 = india3.isChecked();
+        CheckBox indiaNull = (CheckBox) findViewById(R.id.indiaNull);
+        boolean isIndiaNull = indiaNull.isChecked();
 //        Answer for third question
         RadioButton india4 = (RadioButton) findViewById(R.id.india4);
         boolean isIndia4 = india4.isChecked();
@@ -62,11 +66,16 @@ public class MainActivity extends AppCompatActivity {
 //        Answer for nineth question
         RadioButton india10 = (RadioButton) findViewById(R.id.india10);
         boolean isIndia10 = india10.isChecked();
-//        Answer for the last question of the quiz
+//        Answer for the tenth question of the quiz
         RadioButton india11 = (RadioButton) findViewById(R.id.india11);
         boolean isIndia11 = india11.isChecked();
+//        Answer for the eleventh question of the quiz
+        EditText capital = (EditText) findViewById(R.id.capital);
+        String getCapital = capital.getText().toString();
+        Log.v("Mainactivity", "Your Capital is: " + getCapital);
 
         int finalScore = 0;
+        String capitalAnswer = "New Delhi";
 
         if (isIndia1) {
             finalScore = finalScore + 1;
@@ -74,11 +83,11 @@ public class MainActivity extends AppCompatActivity {
             india1.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndia2 && isIndia3) {
-            finalScore = finalScore + 1;
-        } else {
+        if (isIndiaNull) {
             india2.setTextColor(getResources().getColor(R.color.green));
             india3.setTextColor(getResources().getColor(R.color.green));
+        } else if (isIndia2 && isIndia3) {
+            finalScore = finalScore + 1;
         }
 
         if (isIndia4) {
@@ -128,11 +137,18 @@ public class MainActivity extends AppCompatActivity {
         } else {
             india11.setTextColor(getResources().getColor(R.color.green));
         }
+
+        if(getCapital == capitalAnswer) {
+            finalScore = finalScore + 1;
+        } else {
+            capital.setTextColor(getResources().getColor(R.color.green));
+        }
         return finalScore;
     }
 
     //    This method is fired when the "Hit me" button is clicked
     public void showScore(View view) {
+
         finalScore = submitQuiz();
         display(finalScore);
     }
@@ -147,9 +163,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if (finalScore == 10) {
+        if (finalScore == 11) {
             TextView scoreTextView = (TextView) findViewById(R.id.summary_message);
-            scoreTextView.setText(getString(R.string.WooHoo, userName) +
+            scoreTextView.setText(getString(R.string.wooHoo, userName) +
                     getString(R.string.you) +
                     getString(R.string.message_score, finalScore) +
                     getString(R.string.ten_of_ten));
@@ -243,6 +259,10 @@ public class MainActivity extends AppCompatActivity {
 //        Reset EditText value
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
         nameField.setText(null);
+
+//        Reset question eleven
+        EditText capital = (EditText) findViewById(R.id.capital);
+       capital.setText(null);
 
 
     }

@@ -8,7 +8,7 @@
     <!--Question #1 and answers-->
     <string name="question_1">question #1</string>
     <string name="questionOne">Which is the second largest english speaking population in the world?</string>
-    <string name="queationOne1">U.S.A.</string>
+    <string name="questionOne1">U.S.A.</string>
     <string name="questionOne2">India</string>
     <string name="questionOne3">United Kingdom</string>
 
@@ -77,16 +77,20 @@
     <string name="hit_me">Hit me</string>
     <string name="reset_quiz">Reset Quiz</string>
 
+    <!--Question#11 and answers-->
+    <string name="question_11">question #11</string>
+    <string name="questionEleven">What is the actual Capital city of India? </string>
+
     <!--Score message strings-->
-    <string name="WooHoo">WooHoo <xliff:g example="Carla" id="userName">%s</xliff:g></string>
+    <string name="wooHoo">WooHoo <xliff:g example="Carla" id="userName">%s</xliff:g></string>
     <string name="order_summary_name">Name: <xliff:g example="Carla" id="customerName">%s</xliff:g></string>
     <string name="score">/nScore</string>
     <string name="you">\nYou know more things about India than you knew before this quiz</string>
-    <string name="message_score">\nScore: <xliff:g example="score : 10/10" id="message_score">%s</xliff:g></string>
-    <string name="ten_of_ten">/10</string>
+    <string name="message_score">\nScore: <xliff:g example="score : 11/11" id="message_score">%s</xliff:g></string>
+    <string name="ten_of_ten">/11</string>
     <string name="firstToast">Thank you for completing the quiz</string>
-    <string name="notCompletedMessage">Look for the green highlights <xliff:g example="score : 10/10" id="no_message">%s</xliff:g></string>
+    <string name="notCompletedMessage">Look for the green highlights <xliff:g example="score : 11/11" id="no_message">%s</xliff:g></string>
     <string name="youcansolvethis">. You can solve this.</string>
-    <string name="your_score">\nYour score is: <xliff:g example="score : 10/10" id="no_message">%s</xliff:g></string>
+    <string name="your_score">\nYour score is: <xliff:g example="score : 11/11" id="no_message">%s</xliff:g></string>
     <string name="my_portfolio_https_mecozma_github_io">My portfolio: https://mecozma.github.io/</string>
 </resources>

@@ -63,7 +63,7 @@
 
                     <RadioButton
                         style="@style/RadioButtonStyle"
-                        android:text="@string/queationOne1" />
+                        android:text="@string/questionOne1" />
 
                     <RadioButton
                         android:id="@+id/india1"
@@ -393,6 +393,27 @@
                         android:text="@string/questionTen3" />
                 </RadioGroup>
 
+                <View style="@style/DividerStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionNumberStyle"
+                    android:text="@string/question_11" />
+
+                <TextView
+                    style="@style/QuestionTextStyle"
+                    android:text="@string/questionEleven" />
+                    <EditText
+                        android:id="@+id/capital"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Your answer here..."
+                        android:inputType="textCapWords"/>
                 <View style="@style/DividerStyle" />
             </LinearLayout>
 
