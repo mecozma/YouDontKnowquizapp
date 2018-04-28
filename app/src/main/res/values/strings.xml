@@ -41,35 +41,28 @@
     <string name="questionFive3">Pool</string>
 
     <!--Question #6 and answers-->
-    <string name="question_6">question #6</string>
-    <string name="questionSix">Buttons were invented by</string>
-    <string name="questionSix1">Microsoft</string>
-    <string name="questionSix2">Macintosh</string>
-    <string name="questionSix3">indians</string>
-
-    <!--Question #7 and answers-->
-    <string name="question_7">question #7</string>
+    <string name="question_7">question #6</string>
     <string name="questionSeven">Water on moon was discovered by:</string>
     <string name="questionSeven1">India</string>
     <string name="questionSeven2">Russia</string>
     <string name="questionSeven3">U.S.A</string>
 
-    <!--Question #8 and answers-->
-    <string name="question_8">question #8</string>
+    <!--Question #7 and answers-->
+    <string name="question_8">question #7</string>
     <string name="questionEight">The largest number of vegetarians in the world are in:</string>
     <string name="questionEight1">China</string>
     <string name="questionEight2">Brazil</string>
     <string name="questionEight3">India</string>
 
-    <!--Question #9 and answers-->
-    <string name="question_9">question #9</string>
+    <!--Question #8 and answers-->
+    <string name="question_9">question #8</string>
     <string name="questionNine">Which is the world\'s second pharmaceutical industry by the volume of the pills produced?</string>
     <string name="questionNine1">India</string>
     <string name="questionNine2">U.S.A</string>
     <string name="questionNine3">China</string>
 
-    <!--Question#10 and answers-->
-    <string name="question_10">question #10</string>
+    <!--Question#9 and answers-->
+    <string name="question_10">question #9</string>
     <string name="questionTen">In which country the cotton was first spun</string>
     <string name="questionTen1">China</string>
     <string name="questionTen2">Persian Empire</string>
@@ -77,21 +70,22 @@
     <string name="hit_me">Hit me</string>
     <string name="reset_quiz">Reset Quiz</string>
 
-    <!--Question#11 and answers-->
-    <string name="question_11">question #11</string>
+    <!--Question#10 and answers-->
+    <string name="question_11">question #10</string>
     <string name="questionEleven">What is the actual Capital city of India? </string>
 
     <!--Score message strings-->
     <string name="wooHoo">WooHoo <xliff:g example="Carla" id="userName">%s</xliff:g></string>
     <string name="order_summary_name">Name: <xliff:g example="Carla" id="customerName">%s</xliff:g></string>
-    <string name="score">/nScore</string>
+    <string name="score">\nScore</string>
     <string name="you">\nYou know more things about India than you knew before this quiz</string>
-    <string name="message_score">\nScore: <xliff:g example="score : 11/11" id="message_score">%s</xliff:g></string>
-    <string name="ten_of_ten">/11</string>
-    <string name="firstToast">Thank you for completing the quiz</string>
+    <string name="message_score">\nScore: <xliff:g example="score : 10/10" id="message_score">%s</xliff:g></string>
+    <string name="ten_of_ten">/10</string>
     <string name="notCompletedMessage">Look for the green highlights <xliff:g example="score : 11/11" id="no_message">%s</xliff:g></string>
     <string name="youcansolvethis">. You can solve this.</string>
-    <string name="your_score">\nYour score is: <xliff:g example="score : 11/11" id="no_message">%s</xliff:g></string>
+    <string name="your_score">\nYour score is: <xliff:g example="score : 10/10" id="no_message">%s</xliff:g></string>
     <string name="my_portfolio_https_mecozma_github_io">My portfolio: https://mecozma.github.io/</string>
     <string name="your_answer_here">Your answer here...</string>
+    <string name="nameToast">Please insert your name</string>
+    <string name="finalScoreToast">Thank you for completing the quiz.  Your score is:</string>
 </resources>

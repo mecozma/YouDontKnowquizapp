@@ -75,6 +75,7 @@
                 </RadioGroup>
 
                 <View style="@style/DividerStyle" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -223,41 +224,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    style="@style/QuestionNumberStyle"
-                    android:text="@string/question_6" />
-
-                <TextView
-                    style="@style/QuestionTextStyle"
-                    android:text="@string/questionSix" />
-
-                <RadioGroup
-                    android:id="@+id/radio_group04"
-                    style="@style/RadioGroupStyle"
-                    android:orientation="horizontal">
-
-                    <RadioButton
-                        style="@style/RadioButtonStyle"
-                        android:text="@string/questionSix1" />
-
-                    <RadioButton
-                        style="@style/RadioButtonStyle"
-                        android:text="@string/questionSix2" />
-
-                    <RadioButton
-                        android:id="@+id/india7"
-                        style="@style/RadioButtonStyle"
-                        android:text="@string/questionSix3" />
-                </RadioGroup>
-
-                <View style="@style/DividerStyle" />
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -431,7 +397,6 @@
                 android:id="@+id/summary_message"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
 
         </LinearLayout>
 

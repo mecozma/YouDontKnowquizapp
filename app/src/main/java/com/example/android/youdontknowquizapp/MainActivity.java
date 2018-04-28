@@ -3,7 +3,6 @@ package com.example.android.youdontknowquizapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -22,12 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
-
-    @Override
-    protected void onDestroy() {
-        // TODO Auto-generated method stub
-        super.onDestroy();
     }
 
     //    This method counts the answers
@@ -51,22 +44,19 @@ public class MainActivity extends AppCompatActivity {
 //        Answer for fifth question
         RadioButton india6 = (RadioButton) findViewById(R.id.india6);
         boolean isIndia6 = india6.isChecked();
-//        Answer for sixth question
-        RadioButton india7 = (RadioButton) findViewById(R.id.india7);
-        boolean isIndia7 = india7.isChecked();
-//        Answer for seventh question
+//        Answer for sixtth question
         RadioButton india8 = (RadioButton) findViewById(R.id.india8);
         boolean isIndia8 = india8.isChecked();
-//        Answer for eighth question
+//        Answer for seventh question
         RadioButton india9 = (RadioButton) findViewById(R.id.india9);
         boolean isIndia9 = india9.isChecked();
-//        Answer for nineth question
+//        Answer for eithth question
         RadioButton india10 = (RadioButton) findViewById(R.id.india10);
         boolean isIndia10 = india10.isChecked();
-//        Answer for the tenth question of the quiz
+//        Answer for the nineth question of the quiz
         RadioButton india11 = (RadioButton) findViewById(R.id.india11);
         boolean isIndia11 = india11.isChecked();
-//        Answer for the eleventh question of the quiz
+//        Answer for the tenth question of the quiz
         EditText capital = (EditText) findViewById(R.id.capital);
         String getCapital = capital.getText().toString();
 
@@ -101,12 +91,6 @@ public class MainActivity extends AppCompatActivity {
             finalScore = finalScore + 1;
         } else {
             india6.setTextColor(getResources().getColor(R.color.green));
-        }
-
-        if (isIndia7) {
-            finalScore = finalScore + 1;
-        } else {
-            india7.setTextColor(getResources().getColor(R.color.green));
         }
 
         if (isIndia8) {
@@ -152,19 +136,20 @@ public class MainActivity extends AppCompatActivity {
     private void display(int score) {
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
         userName = nameField.getText().toString();
+        int maxScore = 10;
 
         if (userName.length() == 0) {
-            Toast.makeText(this, "Please insert your name", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.nameToast), Toast.LENGTH_SHORT).show();
             return;
         }
 
-        if (finalScore == 11) {
+        if (finalScore == maxScore) {
             TextView scoreTextView = (TextView) findViewById(R.id.summary_message);
             scoreTextView.setText(getString(R.string.wooHoo, userName) +
                     getString(R.string.you) +
                     getString(R.string.message_score, finalScore) +
                     getString(R.string.ten_of_ten));
-            Toast.makeText(this, getString(R.string.firstToast), Toast.LENGTH_SHORT).show();
+
         } else {
             TextView scoreTextView2 = (TextView) findViewById(R.id.summary_message);
             scoreTextView2.setText(getString(R.string.notCompletedMessage, userName) +
@@ -172,9 +157,8 @@ public class MainActivity extends AppCompatActivity {
                     getString(R.string.your_score, finalScore));
         }
 
-
+        Toast.makeText(this, getString(R.string.finalScoreToast) + finalScore, Toast.LENGTH_SHORT).show();
     }
-
 
     public void resetQuiz(View v) {
 
@@ -191,9 +175,6 @@ public class MainActivity extends AppCompatActivity {
         RadioButton india6 = (RadioButton) findViewById(R.id.india6);
         india6.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india7 = (RadioButton) findViewById(R.id.india7);
-        india7.setTextColor(getResources().getColor(R.color.black));
-
         RadioButton india8 = (RadioButton) findViewById(R.id.india8);
         india8.setTextColor(getResources().getColor(R.color.black));
 
@@ -205,7 +186,6 @@ public class MainActivity extends AppCompatActivity {
 
         RadioButton india11 = (RadioButton) findViewById(R.id.india11);
         india11.setTextColor(getResources().getColor(R.color.black));
-
 
 //        Reset button check
         RadioGroup radioGroup00 = (RadioGroup) findViewById(R.id.radio_group00);
@@ -219,9 +199,6 @@ public class MainActivity extends AppCompatActivity {
 
         RadioGroup radioGroup03 = (RadioGroup) findViewById(R.id.radio_group03);
         radioGroup03.clearCheck();
-
-        RadioGroup radioGroup04 = (RadioGroup) findViewById(R.id.radio_group04);
-        radioGroup04.clearCheck();
 
         RadioGroup radioGroup05 = (RadioGroup) findViewById(R.id.radio_group05);
         radioGroup05.clearCheck();
@@ -238,13 +215,14 @@ public class MainActivity extends AppCompatActivity {
 //          Reset the checkboxes
         CheckBox checkBox = (CheckBox) findViewById(R.id.india2);
         checkBox.setChecked(false);
-        checkBox.setTextColor(getResources().getColor(R.color.green));
+        checkBox.setTextColor(getResources().getColor(R.color.black));
 
         CheckBox checkBox1 = (CheckBox) findViewById(R.id.india3);
         checkBox1.setChecked(false);
-        checkBox.setTextColor(getResources().getColor(R.color.green));
+        checkBox1.setTextColor(getResources().getColor(R.color.black));
 
         CheckBox checkBox2 = (CheckBox) findViewById(R.id.indiaNull);
+        checkBox2.setTextColor(getResources().getColor(R.color.black));
         checkBox2.setChecked(false);
 
 //          Reset summary message
@@ -258,7 +236,6 @@ public class MainActivity extends AppCompatActivity {
 //        Reset question eleven
         EditText capital = (EditText) findViewById(R.id.capital);
         capital.setText(null);
-
 
     }
 
