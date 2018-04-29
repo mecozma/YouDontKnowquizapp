@@ -77,7 +77,7 @@
     <!--Score message strings-->
     <string name="wooHoo">WooHoo <xliff:g example="Carla" id="userName">%s</xliff:g></string>
     <string name="order_summary_name">Name: <xliff:g example="Carla" id="customerName">%s</xliff:g></string>
-    <string name="score">\nScore</string>
+    <string name="score">\nScore:</string>
     <string name="you">\nYou know more things about India than you knew before this quiz</string>
     <string name="message_score">\nScore: <xliff:g example="score : 10/10" id="message_score">%s</xliff:g></string>
     <string name="ten_of_ten">/10</string>
@@ -88,4 +88,5 @@
     <string name="your_answer_here">Your answer here...</string>
     <string name="nameToast">Please insert your name</string>
     <string name="finalScoreToast">Thank you for completing the quiz.  Your score is:</string>
+    <string name="tenthQuestionRightAnswer">New Delhi</string>
 </resources>

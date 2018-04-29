@@ -26,101 +26,101 @@ public class MainActivity extends AppCompatActivity {
     //    This method counts the answers
     private int submitQuiz() {
 //        Answer for first question
-        RadioButton india1 = (RadioButton) findViewById(R.id.india1);
-        boolean isIndia1 = india1.isChecked();
+        RadioButton firstQuestionAnswer = (RadioButton) findViewById(R.id.india1);
+        boolean isFirstQuestionAnswer = firstQuestionAnswer.isChecked();
         //Answer for second question
-        CheckBox india2 = (CheckBox) findViewById(R.id.india2);
-        boolean isIndia2 = india2.isChecked();
-        CheckBox india3 = (CheckBox) findViewById(R.id.india3);
-        boolean isIndia3 = india3.isChecked();
-        CheckBox indiaNull = (CheckBox) findViewById(R.id.indiaNull);
-        boolean isIndiaNull = indiaNull.isChecked();
+        CheckBox secondQuestionFirstAnswer = (CheckBox) findViewById(R.id.india2);
+        boolean isSecondQuestionFirstAnswer = secondQuestionFirstAnswer.isChecked();
+        CheckBox secondQuestionSecondAnswer = (CheckBox) findViewById(R.id.india3);
+        boolean isSecondQuestionSecondAnswer = secondQuestionSecondAnswer.isChecked();
+        CheckBox secondQuestionThirdAnswer = (CheckBox) findViewById(R.id.indiaNull);
+        boolean isSecondQuestionThirdAnswer = secondQuestionThirdAnswer.isChecked();
 //        Answer for third question
-        RadioButton india4 = (RadioButton) findViewById(R.id.india4);
-        boolean isIndia4 = india4.isChecked();
+        RadioButton thirdQuestionAnswer = (RadioButton) findViewById(R.id.india4);
+        boolean isThirdQuestionAnswer = thirdQuestionAnswer.isChecked();
 //        Answer for forth question
-        RadioButton india5 = (RadioButton) findViewById(R.id.india5);
-        boolean isIndia5 = india5.isChecked();
+        RadioButton fourthQuestionAnswer = (RadioButton) findViewById(R.id.india5);
+        boolean isFourthQuestionAnswer = fourthQuestionAnswer.isChecked();
 //        Answer for fifth question
-        RadioButton india6 = (RadioButton) findViewById(R.id.india6);
-        boolean isIndia6 = india6.isChecked();
-//        Answer for sixtth question
-        RadioButton india8 = (RadioButton) findViewById(R.id.india8);
-        boolean isIndia8 = india8.isChecked();
+        RadioButton fifthQuestionAnswer = (RadioButton) findViewById(R.id.india6);
+        boolean isFifthQuestionAnswer = fifthQuestionAnswer.isChecked();
+//        Answer for sixth question
+        RadioButton sixthQuestionAnswer = (RadioButton) findViewById(R.id.india8);
+        boolean isSixthQuestionAnswer = sixthQuestionAnswer.isChecked();
 //        Answer for seventh question
-        RadioButton india9 = (RadioButton) findViewById(R.id.india9);
-        boolean isIndia9 = india9.isChecked();
-//        Answer for eithth question
-        RadioButton india10 = (RadioButton) findViewById(R.id.india10);
-        boolean isIndia10 = india10.isChecked();
-//        Answer for the nineth question of the quiz
-        RadioButton india11 = (RadioButton) findViewById(R.id.india11);
-        boolean isIndia11 = india11.isChecked();
+        RadioButton seventhQuestionAnswer = (RadioButton) findViewById(R.id.india9);
+        boolean isSeventhQuestionAnswer = seventhQuestionAnswer.isChecked();
+//        Answer for eighth question
+        RadioButton eighthQuestionAnswer = (RadioButton) findViewById(R.id.india10);
+        boolean isEighthQuestionAnswer = eighthQuestionAnswer.isChecked();
+//        Answer for the ninth question of the quiz
+        RadioButton ninthQuestionAnswer = (RadioButton) findViewById(R.id.india11);
+        boolean isNinthQuestionAnswer = ninthQuestionAnswer.isChecked();
 //        Answer for the tenth question of the quiz
-        EditText capital = (EditText) findViewById(R.id.capital);
-        String getCapital = capital.getText().toString();
+        EditText tenthQuestionAnswer = (EditText) findViewById(R.id.capital);
+        String getTenthQuestionAnswer = tenthQuestionAnswer.getText().toString();
 
         int finalScore = 0;
 
-        if (isIndia1) {
+        if (isFirstQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india1.setTextColor(getResources().getColor(R.color.green));
+            firstQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndiaNull) {
-            india2.setTextColor(getResources().getColor(R.color.green));
-            india3.setTextColor(getResources().getColor(R.color.green));
-        } else if (isIndia2 && isIndia3) {
+        if (isSecondQuestionThirdAnswer) {
+            secondQuestionFirstAnswer.setTextColor(getResources().getColor(R.color.green));
+            secondQuestionSecondAnswer.setTextColor(getResources().getColor(R.color.green));
+        } else if (isSecondQuestionFirstAnswer && isSecondQuestionSecondAnswer) {
             finalScore = finalScore + 1;
         }
 
-        if (isIndia4) {
-            finalScore = finalScore + 1;
-        } else {
-            india4.setTextColor(getResources().getColor(R.color.green));
-        }
-
-        if (isIndia5) {
+        if (isThirdQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india5.setTextColor(getResources().getColor(R.color.green));
+            thirdQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndia6) {
+        if (isFourthQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india6.setTextColor(getResources().getColor(R.color.green));
+            fourthQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndia8) {
+        if (isFifthQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india8.setTextColor(getResources().getColor(R.color.green));
+            fifthQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndia9) {
+        if (isSixthQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india9.setTextColor(getResources().getColor(R.color.green));
+            sixthQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndia10) {
+        if (isSeventhQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india10.setTextColor(getResources().getColor(R.color.green));
+            seventhQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (isIndia11) {
+        if (isEighthQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            india11.setTextColor(getResources().getColor(R.color.green));
+            eighthQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
 
-        if (getCapital.equals("New Delhi")) {
+        if (isNinthQuestionAnswer) {
             finalScore = finalScore + 1;
         } else {
-            capital.setTextColor(getResources().getColor(R.color.green));
+            ninthQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
+        }
+
+        if (getTenthQuestionAnswer.equals(getString(R.string.tenthQuestionRightAnswer))) {
+            finalScore = finalScore + 1;
+        } else {
+            tenthQuestionAnswer.setTextColor(getResources().getColor(R.color.green));
         }
         return finalScore;
     }
@@ -163,79 +163,79 @@ public class MainActivity extends AppCompatActivity {
     public void resetQuiz(View v) {
 
 //        Reset button color
-        RadioButton india1 = (RadioButton) findViewById(R.id.india1);
-        india1.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionOneAnswer = (RadioButton) findViewById(R.id.india1);
+        questionOneAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india4 = (RadioButton) findViewById(R.id.india4);
-        india4.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionThreeAnswer = (RadioButton) findViewById(R.id.india4);
+        questionThreeAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india5 = (RadioButton) findViewById(R.id.india5);
-        india5.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionFourAnswer = (RadioButton) findViewById(R.id.india5);
+        questionFourAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india6 = (RadioButton) findViewById(R.id.india6);
-        india6.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionFiveAnswer = (RadioButton) findViewById(R.id.india6);
+        questionFiveAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india8 = (RadioButton) findViewById(R.id.india8);
-        india8.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionSixAnswer = (RadioButton) findViewById(R.id.india8);
+        questionSixAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india9 = (RadioButton) findViewById(R.id.india9);
-        india9.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionSevenAnswer = (RadioButton) findViewById(R.id.india9);
+        questionSevenAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india10 = (RadioButton) findViewById(R.id.india10);
-        india10.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionEightAnswer = (RadioButton) findViewById(R.id.india10);
+        questionEightAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        RadioButton india11 = (RadioButton) findViewById(R.id.india11);
-        india11.setTextColor(getResources().getColor(R.color.black));
+        RadioButton questionNinthAnswer = (RadioButton) findViewById(R.id.india11);
+        questionNinthAnswer.setTextColor(getResources().getColor(R.color.black));
 
 //        Reset button check
-        RadioGroup radioGroup00 = (RadioGroup) findViewById(R.id.radio_group00);
-        radioGroup00.clearCheck();
+        RadioGroup questionOne = (RadioGroup) findViewById(R.id.radio_group00);
+        questionOne.clearCheck();
 
-        RadioGroup radioGroup01 = (RadioGroup) findViewById(R.id.radio_group01);
-        radioGroup01.clearCheck();
+        RadioGroup questionThree = (RadioGroup) findViewById(R.id.radio_group01);
+        questionThree.clearCheck();
 
-        RadioGroup radioGroup02 = (RadioGroup) findViewById(R.id.radio_group02);
-        radioGroup02.clearCheck();
+        RadioGroup questionFour = (RadioGroup) findViewById(R.id.radio_group02);
+        questionFour.clearCheck();
 
-        RadioGroup radioGroup03 = (RadioGroup) findViewById(R.id.radio_group03);
-        radioGroup03.clearCheck();
+        RadioGroup questionFive = (RadioGroup) findViewById(R.id.radio_group03);
+        questionFive.clearCheck();
 
-        RadioGroup radioGroup05 = (RadioGroup) findViewById(R.id.radio_group05);
-        radioGroup05.clearCheck();
+        RadioGroup questionSix = (RadioGroup) findViewById(R.id.radio_group05);
+        questionSix.clearCheck();
 
-        RadioGroup radioGroup06 = (RadioGroup) findViewById(R.id.radio_group06);
-        radioGroup06.clearCheck();
+        RadioGroup questionSeven = (RadioGroup) findViewById(R.id.radio_group06);
+        questionSeven.clearCheck();
 
-        RadioGroup radioGroup07 = (RadioGroup) findViewById(R.id.radio_group07);
-        radioGroup07.clearCheck();
+        RadioGroup questionEight = (RadioGroup) findViewById(R.id.radio_group07);
+        questionEight.clearCheck();
 
-        RadioGroup radioGroup08 = (RadioGroup) findViewById(R.id.radio_group08);
-        radioGroup08.clearCheck();
+        RadioGroup questionNine = (RadioGroup) findViewById(R.id.radio_group08);
+        questionNine.clearCheck();
 
 //          Reset the checkboxes
-        CheckBox checkBox = (CheckBox) findViewById(R.id.india2);
-        checkBox.setChecked(false);
-        checkBox.setTextColor(getResources().getColor(R.color.black));
+        CheckBox questionTwoFirstAnswer = (CheckBox) findViewById(R.id.india2);
+        questionTwoFirstAnswer.setChecked(false);
+        questionTwoFirstAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        CheckBox checkBox1 = (CheckBox) findViewById(R.id.india3);
-        checkBox1.setChecked(false);
-        checkBox1.setTextColor(getResources().getColor(R.color.black));
+        CheckBox questionTwoSecondAnswer = (CheckBox) findViewById(R.id.india3);
+        questionTwoSecondAnswer.setChecked(false);
+        questionTwoSecondAnswer.setTextColor(getResources().getColor(R.color.black));
 
-        CheckBox checkBox2 = (CheckBox) findViewById(R.id.indiaNull);
-        checkBox2.setTextColor(getResources().getColor(R.color.black));
-        checkBox2.setChecked(false);
+        CheckBox questionTwoThirdAnswer = (CheckBox) findViewById(R.id.indiaNull);
+        questionTwoThirdAnswer.setTextColor(getResources().getColor(R.color.black));
+        questionTwoThirdAnswer.setChecked(false);
 
 //          Reset summary message
-        TextView textView = (TextView) findViewById(R.id.summary_message);
-        textView.setText(R.string.score);
+        TextView summaryMessage = (TextView) findViewById(R.id.summary_message);
+        summaryMessage.setText(R.string.score);
 
 //        Reset EditText value
-        EditText nameField = (EditText) findViewById(R.id.edit_text_view);
-        nameField.setText(null);
+        EditText userNameField = (EditText) findViewById(R.id.edit_text_view);
+        userNameField.setText(null);
 
 //        Reset question eleven
-        EditText capital = (EditText) findViewById(R.id.capital);
-        capital.setText(null);
+        EditText questionTenEditText = (EditText) findViewById(R.id.capital);
+        questionTenEditText.setText(null);
 
     }
 
